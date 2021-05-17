@@ -1,0 +1,322 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "el template",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "salir",
+            "stop"
+          ]
+        },
+        {
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hola"
+          ]
+        },
+        {
+          "name": "UseApiIntent",
+          "samples": [
+            "api",
+            "probar api",
+            "usar api",
+            "conecta con api",
+            "conectar con api",
+            "consumir api",
+            "consume api"
+          ]
+        },
+        {
+          "name": "CheckPermisionsIntent",
+          "samples": [
+            "permisos",
+            "comprobar permisos",
+            "comprueba permisos",
+            "comprueba si tienes los permisos",
+            "permiso"
+          ]
+        },
+        {
+          "name": "SaveSessionIntent",
+          "samples": [
+            "guardar",
+            "guardar sesión",
+            "guardar en sesión",
+            "almacena en sesión",
+            "guarda sesión"
+          ]
+        },
+        {
+          "name": "LoadSessionIntent",
+          "samples": [
+            "cargar",
+            "cargar sesión",
+            "cargar de sesión",
+            "leer de sesión",
+            "leer sesión",
+            "lee sesión"
+          ]
+        },
+        {
+          "name": "SaveDynamoDBIntent",
+          "samples": [
+            "guardar base de datos",
+            "guardar en base de datos",
+            "guardar dynamo",
+            "guardar dinamo db",
+            "guardar dynamodb",
+            "guardar la base de datos"
+          ]
+        },
+        {
+          "name": "LoadDynamoDBIntent",
+          "samples": [
+            "cargar base de datos",
+            "cargar de base de datos",
+            "leer de base de datos",
+            "leer base de datos",
+            "lee dynamodb",
+            "leer dinamo",
+            "leer dinamo db"
+          ]
+        },
+        {
+          "name": "ColorIntent",
+          "slots": [
+            {
+              "name": "colorSlot",
+              "type": "AMAZON.Color"
+            }
+          ],
+          "samples": [
+            "{colorSlot}",
+            "color {colorSlot}",
+            "elijo el color {colorSlot}"
+          ]
+        },
+        {
+          "name": "WhatCanIBuyIntent",
+          "slots": [],
+          "samples": [
+            "comprar",
+            "compra",
+            "adquirir",
+            "dime qué puedo comprar",
+            "qué puedo comprar",
+            "cuéntame qué puedo comprar",
+            "ampliar",
+            "qué puedo adquirir"
+          ]
+        },
+        {
+          "name": "TellMeMoreAboutProductIntent",
+          "slots": [
+            {
+              "name": "ProductName",
+              "type": "LIST_OF_PRODUCT_NAMES"
+            }
+          ],
+          "samples": [
+            "dime más sobre {ProductName}",
+            "cuéntame más sobre {ProductName}",
+            "qué es {ProductName}"
+          ]
+        },
+        {
+          "name": "BuyIntent",
+          "slots": [
+            {
+              "name": "ProductName",
+              "type": "LIST_OF_PRODUCT_NAMES",
+              "samples": [
+                "{ProductName}"
+              ]
+            }
+          ],
+          "samples": [
+            "quiero {ProductName}",
+            "quería {ProductName}",
+            "compra {ProductName}",
+            "comprar {ProductName}",
+            "adquirir {ProductName}",
+            "pillar {ProductName}",
+            "coger {ProductName}"
+          ]
+        },
+        {
+          "name": "RefundProductIntent",
+          "slots": [
+            {
+              "name": "ProductName",
+              "type": "LIST_OF_PRODUCT_NAMES"
+            }
+          ],
+          "samples": [
+            "devolver {ProductName}",
+            "retornar {ProductName}",
+            "cancelar {ProductName}",
+            "devuelve {ProductName}",
+            "cancela {ProductName}",
+            "borra {ProductName}"
+          ]
+        },
+        {
+          "name": "PurchaseHistoryIntent",
+          "slots": [],
+          "samples": [
+            "histórico de compras",
+            "qué he comprado",
+            "qué compré",
+            "mis pedidos",
+            "ver mis compras",
+            "mis compras realizadas"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "ChainingIntent",
+          "samples": [
+            "encadena intento",
+            "encadena intent",
+            "cadena de intents",
+            "cadena de intentos",
+            "encadena",
+            "encadenar",
+            "cadena",
+            "encadena intentos",
+            "encadena intents",
+            "encadenamiento"
+          ]
+        },
+        {
+          "name": "UpdateJokeCategoriesIntent",
+          "slots": [],
+          "samples": [
+            "carga los valores de la entidad dinámica",
+            "lee los valores del slot dinámico",
+            "carga los valores del slot dinámico",
+            "actualiza los valores del slot dinámico"
+          ]
+        },
+        {
+          "name": "ClearDynamicEntitiesIntent",
+          "slots": [],
+          "samples": [
+            "borra el slot dinámico",
+            "limpia el slot dinámico",
+            "limpia los valores del slot dinámico",
+            "borra los valores del slot dinámico"
+          ]
+        },
+        {
+          "name": "TellJokeIntent",
+          "slots": [
+            {
+              "name": "dynamicSlot",
+              "type": "MyDynamicEntitySlot"
+            }
+          ],
+          "samples": [
+            "cuéntame un chiste de tipo {dynamicSlot}",
+            "cuenta un chiste de tipo {dynamicSlot}",
+            "cuéntame un chiste de {dynamicSlot}"
+          ]
+        },
+        {
+          "name": "AreYouACarIntent",
+          "slots": [],
+          "samples": [
+            "eres un coche",
+            "eres un auto",
+            "eres un vehículo",
+            "eres un carro"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "LIST_OF_PRODUCT_NAMES",
+          "values": [
+            {
+              "id": "nameproductpurchase",
+              "name": {
+                "value": "productos ilimitados",
+                "synonyms": [
+                  "suscripción",
+                  "Número ilimitado de productos",
+                  "suscripción premium",
+                  "suscripción ilimitada",
+                  "extra items",
+                  "extra productos",
+                  "más productos",
+                  "más items",
+                  "Pack de más productos",
+                  "Paquete de más productos",
+                  "productos sin límite"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "MyDynamicEntitySlot",
+          "values": [
+            {
+              "name": {
+                "value": "none"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "BuyIntent",
+          "delegationStrategy": "ALWAYS",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "ProductName",
+              "type": "LIST_OF_PRODUCT_NAMES",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1414268579609.664443025499"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1414268579609.664443025499",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Por favor dime el nombre del producto que quieres comprar. Por ejemplo, di 'productos ilimitados'"
+          }
+        ]
+      }
+    ]
+  }
+}

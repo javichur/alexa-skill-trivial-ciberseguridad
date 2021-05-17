@@ -1,0 +1,17 @@
+{
+  "name": "alexa-skill-trivial-ciberseguridad",
+  "version": "1.0.0",
+  "description": "Juega al Trivial de la Ciberseguridad y demuestra a todos que eres el que más sabe sobre contraseñas, compras online, redes sociales y mensajería instantánea, seguridad en dispositivos, navegación segura y fraudes online. ¿Quién será el usuario más concienciado y protegido?",
+  "main": "index.js",
+  "scripts": {
+    "vulnerabilities": "npm audit"
+  },
+  "author": "Javier Campos",
+  "homepage": "https://github.com/javichur/alexa-skill-trivial-ciberseguridad",
+  "license": "Apache",
+  "dependencies": {
+    "ask-sdk-core": "^2.7.0",
+    "ask-sdk-model": "^1.27.0",
+    "dynamola": "^1.4.5"
+  }
+}
