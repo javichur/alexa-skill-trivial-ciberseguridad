@@ -166,5 +166,375 @@ module.exports = {
       ],
       aclaracion: 'un gestor de contraseñas nos facilitará mucho el trabajo a la hora de crear contraseñas robustas, actualizarlas cada cierto tiempo y gestionar una gran cantidad de cuentas.',
     },
+    {
+      id: 8,
+      categoria: 'pass',
+      enunciado: 'El ciberataque que realiza combinaciones de letras para averiguar nuestras contraseñas se conoce como:',
+      respuestas: [
+        {
+          respuesta: 'ataque por fuerza bruta',
+          correcta: true,
+        },
+        {
+          respuesta: 'spidering',
+          correcta: false,
+        },
+        {
+          respuesta: 'passwording',
+          correcta: false,
+        },
+      ],
+      aclaracion: 'los ataques por fuerza bruta permiten a los ciberdelincuentes obtener nuestras contraseñas a base de realizar cientos de combinaciones de letras y números con alguna máquina diseñada para tal fin.',
+    },
+    {
+      id: 9,
+      categoria: 'pass',
+      enunciado: 'Si para acceder a tus cuentas, además de la contraseña necesitas introducir otro dato, como un código recibido a través de un SMS, hablamos de:',
+      respuestas: [
+        {
+          respuesta: 'tokening',
+          correcta: false,
+        },
+        {
+          respuesta: 'verificación en dos pasos',
+          correcta: true,
+        },
+        {
+          respuesta: 'multipassword',
+          correcta: false,
+        },
+      ],
+      aclaracion: 'una capa extra para la seguridad de nuestras credenciales es la verificación en dos pasos. En este proceso, se requiere la utilización de otro elemento además de nuestra contraseña para validar el acceso a un servicio.',
+    },
+    {
+      id: 10,
+      categoria: 'pass',
+      enunciado: 'de las siguientes opciones, ¿cuál es la mejor para comenzar a crear una contraseña segura?',
+      respuestas: [
+        {
+          respuesta: 'una combinación larga de números',
+          correcta: false,
+        },
+        {
+          respuesta: 'una combinación larga de palabras y números',
+          correcta: true,
+        },
+        {
+          respuesta: 'una combinación de nuestra fecha de cumpleaños',
+          correcta: false,
+        },
+      ],
+      aclaracion: 'la mejor opción es recurrir a una frase o combinación larga de palabras y números, a la que ir aplicando otras como es alternar mayúsculas, minúsculas, números y caracteres especiales.',
+    },
+    ,
+    {
+      id: 11,
+      categoria: 'compras',
+      enunciado: 'estás cerrando la compra de un artículo a través de una plataforma de compraventa. El vendedor te pide realizar una transferencia a un banco extranjero. ¿Es una transacción segura?',
+      respuestas: [
+        {
+          respuesta: 'sí, las transferencias son el método de pago mas seguro',
+          correcta: false,
+        },
+        {
+          respuesta: 'sí, siempre y cuando que el vendedor me envíe pruebas de estar en posesión del artículo por WhatsApp',
+          correcta: false,
+        },
+        {
+          respuesta: 'no, si hubiese algún problema sería difícil recuperar mi dinero',
+          correcta: true,
+        },
+      ],
+      aclaracion: 'el principal problema de realizar una transferencia a un banco extranjera es que, en caso de resultar ser víctima de un fraude y querer recuperar nuestro dinero, sería complicado.',
+    },
+    {
+      id: 12,
+      categoria: 'compras',
+      enunciado: '¿qué aspectos comprobarías de un sitio web para saber si es fiable?',
+      respuestas: [
+        {
+          respuesta: 'condiciones de devolución y reembolso',
+          correcta: true,
+        },
+        {
+          respuesta: 'cantidad de ofertas y promociones',
+          correcta: false,
+        },
+        {
+          respuesta: 'número de visitas',
+          correcta: false,
+        },
+      ],
+      aclaracion: 'si la tienda online carece de un apartado para las condiciones de devolucion y reembolso, es sin duda una tienda online fraudulenta.',
+    },
+    {
+      id: 13,
+      categoria: 'compras',
+      enunciado: '¿cómo podemos asegurarnos de que la tienda online vela por nuestra privacidad y la seguridad de nuestras comunicaciones?',
+      respuestas: [
+        {
+          respuesta: 'dispone de un certificado digital y HTTPS',
+          correcta: true,
+        },
+        {
+          respuesta: 'dispone de un certificado digital y HTTP',
+          correcta: false,
+        },
+        {
+          respuesta: 'tiene muchos comentarios positivos',
+          correcta: false,
+        },
+      ],
+      aclaracion: 'el certificado digital y el protocolo HTTPS nos aseguran que todas las comunicaciones que hagamos dentro de la web estarán cifradas.',
+    },
+    {
+      id: 14,
+      categoria: 'compras',
+      enunciado: 'encuentras una oferta en una tienda online pero esta no tiene apartado de términos y condiciones. Confiarías en ella?',
+      respuestas: [
+        {
+          respuesta: 'sí, aunque solo en territorio nacional',
+          correcta: false,
+        },
+        {
+          respuesta: 'sí, si dispone de redes sociales',
+          correcta: false,
+        },
+        {
+          respuesta: 'no, nunca',
+          correcta: true, 
+        },
+      ],
+      aclaracion: 'si una tienda online carece de un apartado de términos y condiciones, hay que desconfiar.',
+    },
+    {
+      id: 15,
+      categoria: 'compras',
+      enunciado: 'has encontrado una oferta para un producto que andabas buscando. Parece que desde la web ofrecen varias formas de pago, pero en el último paso solo acepta tarjeta de crédito. Qué harías?',
+      respuestas: [
+        {
+          respuesta: 'utilizar una tarjeta secundaria',
+          correcta: false,
+        },
+        {
+          respuesta: 'contactar con el vendedor',
+          correcta: false,
+        },
+        {
+          respuesta: 'descartar la compra',
+          correcta: true, 
+        },
+      ],
+      aclaracion: 'en estos casos, lo mejor es descartar la compra. Puede que, utilizando una tarjeta solo para compras online, corramos menos riesgos pero quizás nunca lleguemos a recibir el producto. Ante la más mínima señal de fraude, lo más seguro es descartar la compra.',
+    },
+    {
+      id: 16,
+      categoria: 'compras',
+      enunciado: '¿cuál de las siguientes recomendaciones nos asegura una compra online segura?',
+      respuestas: [
+        {
+          respuesta: 'no comprar en época de rebajas',
+          correcta: false,
+        },
+        {
+          respuesta: 'utilizar una tarjeta solo para compras online',
+          correcta: true,
+        },
+        {
+          respuesta: 'utilizar solo las promociones que nos lleguen por email',
+          correcta: false, 
+        },
+      ],
+      aclaracion: 'si utilizamos una tarjeta exclusivamente para nuestras compras online, en caso de sufrir un fraude, no perderemos más que los datos y/o el dinero almacenado en dicha tarjeta.',
+    },
+    {
+      id: 17,
+      categoria: 'compras',
+      enunciado: 'Algunas webs de compra online permiten almacenar los datos de tu tarjeta de crédito. ¿Cuándo puedes hacer uso de esta opcion?',
+      respuestas: [
+        {
+          respuesta: 'solo si tiene HTTPS',
+          correcta: false,
+        },
+        {
+          respuesta: 'solo si tiene certificado digital',
+          correcta: false,
+        },
+        {
+          respuesta: 'nunca',
+          correcta: true, 
+        },
+      ],
+      aclaracion: 'aunque la web nos ofrezca la confianza de que nuestras comunicaciones no van a ser espiadas, no es recomendable almacenar este tipo de datos personales. No sabemos si la seguridad del servicio web puede llegar a ser vulnerada, y nuestros datos filtrados.',
+    },
+    {
+      id: 18,
+      categoria: 'compras',
+      enunciado: 'no siempre puedes evaluar la calidad del producto de una tienda online. Como podrías identificar la fiabilidad de una tienda online?',
+      respuestas: [
+        {
+          respuesta: 'calidad de la descripción e imágenes de los productos',
+          correcta: true,
+        },
+        {
+          respuesta: 'variedad de productos ofertados',
+          correcta: false,
+        },
+        {
+          respuesta: 'presencia de marcas conocidas',
+          correcta: false, 
+        },
+      ],
+      aclaracion: 'las tiendas online fraudulentas suelen incluir descripciones pobres sobre sus productos, o imágenes de mala calidad o incluso robadas de otras webs.',
+    },
+    {
+      id: 19,
+      categoria: 'compras',
+      enunciado: '¿qué aspectos referentes al precio de un producto deben hacerte sospechar en una tienda online?',
+      respuestas: [
+        {
+          respuesta: 'variedad de productos con un precio igual o similar',
+          correcta: false,
+        },
+        {
+          respuesta: 'precios anormalmente bajos',
+          correcta: false,
+        },
+        {
+          respuesta: 'ambas opciones',
+          correcta: true, 
+        },
+      ],
+      aclaracion: 'Una tienda online con precios demasiado bajos y productos similares con el mismo precio es candidata a ser un fraude.',
+    },
+    {
+      id: 20,
+      categoria: 'compras',
+      enunciado: 'de las siguientes opciones, ¿cuál sería una opción de pago seguro?',
+      respuestas: [
+        {
+          respuesta: 'plataforma de pago seguro',
+          correcta: true,
+        },
+        {
+          respuesta: 'transferencia bancaria',
+          correcta: false,
+        },
+        {
+          respuesta: 'ambas respuestas son correctas',
+          correcta: false, 
+        },
+      ],
+      aclaracion: 'las plataformas de pago actúan como intermediarias para evitar que nuestros datos se filtren, y nos ayudarán a la hora de recuperar nuestro dinero en caso de fraude.',
+    },
+    {
+      id: 21,
+      categoria: 'rrss',
+      enunciado: '¿cómo podemos detectar si un perfil es falso en una red social?',
+      respuestas: [
+        {
+          respuesta: 'comprobar las imagenes del perfil en Google imagenes',
+          correcta: false,
+        },
+        {
+          respuesta: 'ver el número de seguidores y seguidos',
+          correcta: false,
+        },
+        {
+          respuesta: 'ambas opciones son correctas',
+          correcta: true, 
+        },
+      ],
+      aclaracion: 'para detectar un perfil falso, podemos analizar el número de seguidores que tiene en relación con los perfiles que sigue, o comprobar si su imagen de perfil o el resto de imágenes publicadas no sean suyas, mediante Google imágenes.',
+    },
+    {
+      id: 31,
+      categoria: 'dispositivos',
+      enunciado: 'de las siguientes opciones, ¿cuáles son medidas antimalware con las que proteger nuestro dispositivo?',
+      respuestas: [
+        {
+          respuesta: 'contraseñas seguras',
+          correcta: false,
+        },
+        {
+          respuesta: 'antivirus y cortafuegos',
+          correcta: true,
+        },
+        {
+          respuesta: 'phishing',
+          correcta: false, 
+        },
+      ],
+      aclaracion: 'dentro de las medidas de protección, el antivirus y el cortafuegos (firewall) se encuentran entre las mas básicas. Su función es la de protegernos ante distintos tipos de ataque a la seguridad de nuestro equipo.',
+    },
+    {
+      id: 41,
+      categoria: 'navegacion',
+      enunciado: '¿los plugins, addons o complementos utilizados por los navegadores son siempre seguros?',
+      respuestas: [
+        {
+          respuesta: 'solamente cuando los descargo de sitios no oficiales',
+          correcta: false,
+        },
+        {
+          respuesta: 'sí. Precisamente me ayudan a mejorar la seguridad',
+          correcta: false,
+        },
+        {
+          respuesta: 'no. Incluso uno fiable puede presentar vulnerabilidades',
+          correcta: true, 
+        },
+      ],
+      aclaracion: 'al igual que las aplicaciones, estos complementos pueden ser maliciosos o presentar vulnerabilidades. Lo mejor es descargarlos de sitios oficiales y revisar los comentarios y valoraciones de otros usuarios.',
+    },
+    {
+      id: 51,
+      categoria: 'fraudes',
+      enunciado: 'uno de tus contactos te ha compartido una noticia sobre una cura para una enfermedad muy contagiosa. ¿Cómo comprobarías si se trata de una noticia real?',
+      respuestas: [
+        {
+          respuesta: 'analizar los likes de la noticia',
+          correcta: false,
+        },
+        {
+          respuesta: 'revisar si la url tiene HTTPS',
+          correcta: false,
+        },
+        {
+          respuesta: 'buscar la fuente y contrastar',
+          correcta: true, 
+        },
+      ],
+      aclaracion: 'internet esta lleno de bulos y noticias falsas. Para combatir la desinformacion, es recomendable contrastar la informacion con otras fuentes.',
+    },
+    {
+      id: xxxx,
+      categoria: '',
+      enunciado: '',
+      respuestas: [
+        {
+          respuesta: '',
+          correcta: false,
+        },
+        {
+          respuesta: '',
+          correcta: false,
+        },
+        {
+          respuesta: '',
+          correcta: false, 
+        },
+      ],
+      aclaracion: '',
+    },
+
   ],
 };
+
+
+
+
+
+
+
+
