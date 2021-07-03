@@ -1,4 +1,42 @@
-module.exports = {
+function checkData() {
+  console.log(`Iniciando análisis...`);
+
+  let numErrores = 0;
+
+  for (const one of data.PREGUNTAS) {
+    // console.log(`${one.id}.`);
+    if (data.CATEGORIAS.filter(cat => cat.id === one.categoria).length != 1) {
+      console.log(`${one.id}. Error categoría (${one.categoria})`);
+      numErrores++;
+    }
+
+    if (one.enunciado.length == 0) {
+      console.log(`${one.id}. Error falta enunciado.`);
+      numErrores++;
+    }
+
+    if (one.respuestas.length < 2) {
+      console.log(`${one.id}. Error faltan respuestas.`);
+      numErrores++;
+    } else if (one.respuestas.filter(r => r.respuesta.length == 0).length != 0) {
+      console.log(`${one.id}. Error. Falta texto en la respuesta.`);
+      numErrores++;
+    } else if (one.respuestas.filter(r => r.correcta == true).length != 1) {
+      console.log(`${one.id}. Error. Debe haber 1 respuesta correcta.`);
+      numErrores++;
+    }
+
+    if (one.aclaracion.length == 0) {
+      console.log(`${one.id}. Error. Falta texto aclaratorio.`);
+      numErrores++;
+    }
+  }
+
+  console.log(`${data.PREGUNTAS.length} preguntas analizadas.`);
+  console.log(`${numErrores} errores encontrados.`);
+}
+
+const data = {
   CATEGORIAS: [
     {
       id: 'rrss',
@@ -101,7 +139,7 @@ module.exports = {
         },
         {
           respuesta: 'no, así no se me olvida',
-          correcta: true,
+          correcta: false,
         }
       ],
       aclaracion: 'utilizar una misma contraseña para varias cuentas es muy peligroso. Una vez que una cuenta sea vulnerada, el resto podrían estar en peligro por efecto dominó',
@@ -226,7 +264,6 @@ module.exports = {
       ],
       aclaracion: 'la mejor opción es recurrir a una frase o combinación larga de palabras y números, a la que ir aplicando otras como es alternar mayúsculas, minúsculas, números y caracteres especiales.',
     },
-    ,
     {
       id: 11,
       categoria: 'compras',
@@ -497,7 +534,7 @@ module.exports = {
           correcta: false,
         },
         {
-          respuesta: 'ingenieria social',
+          respuesta: 'ingeniería social',
           correcta: true,
         },
         {
@@ -505,7 +542,7 @@ module.exports = {
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'la ingeniería social se basa en el engaño y la manipulción para conseguir que los usuarios hagamos lo que nos piden los ciberdelincuentes, como por ejemplo, que demos nuestros datos personales.',
     },
     {
       id: 25,
@@ -521,7 +558,7 @@ module.exports = {
           correcta: true,
         },
         {
-          respuesta: 'E-reputación',
+          respuesta: 'e-reputación',
           correcta: false, 
         },
       ],
@@ -850,182 +887,182 @@ module.exports = {
     {
       id: 42,
       categoria: 'navegacion',
-      enunciado: '',
+      enunciado: '¿Cómo puedes mejorar tu seguridad y privacidad cuando navegas por Internet?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'manteniendo mi dispositivo actualizado y utilizando una conexión segura',
           correcta: false,
         },
         {
-          respuesta: '',
+          respuesta: 'instalando una herramienta antivirus',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false, 
+          respuesta: 'ambas respuestas son correctas',
+          correcta: true, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'manteniendo el dispositivo actualizado y contando con herramientas de protección, como el antivirus, nos aseguramos de que nuestro dispositivo esta más protegido de posibles amenazas.',
     },
     {
       id: 43,
       categoria: 'navegacion',
-      enunciado: '',
+      enunciado: '¿De qué te protege una web que utiliza protocolo HTTPS?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'del robo de datos y de la suplantación de identidad',
+          correcta: true,
+        },
+        {
+          respuesta: 'de un intento de phishing',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
-        },
-        {
-          respuesta: '',
+          respuesta: 'de riesgos de explotación de vulnerabilidades',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'el protocolo HTTPS permite una conexión segura mediante un cifrado SSL que posibilita que los datos viajen de forma segura entre tu equipo y el servidor de la página web.',
     },
     {
       id: 44,
       categoria: 'navegacion',
-      enunciado: '',
+      enunciado: 'al entrar en la configuración del router, has visto varios dispositivos desconocidos conectados a tu red wifi. ¿Qué debes hacer?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'debo bloquearlos y hacer un filtro de direcciones MAC',
           correcta: false,
         },
         {
-          respuesta: '',
+          respuesta: 'debo cambiar la contraseña de acceso al router así como de conexión a la red wifi',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false, 
+          respuesta: 'ambas respuestas son correctas',
+          correcta: true, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'una configuración segura de nuestro router pasa por cambiar la contraseña de acceso, la de la red wifi y, si en el caso de detectar dispositivos desconocidos, debemos bloquearlos y realizar un filtrado de direcciones MAC.',
     },
     {
       id: 45,
       categoria: 'navegacion',
-      enunciado: '',
+      enunciado: '¿puede infectarte un documento, una imagen o un vídeo recibido a través de un correo electrónico o descargado de una web?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'una imagen no contiene malware',
           correcta: false,
         },
         {
-          respuesta: '',
+          respuesta: 'los vídeos e imágenes no pueden contener malware',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false, 
+          respuesta: 'cualquier archivo puede contener software malicioso',
+          correcta: true, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'Cualquier archivo descargado de Internet puede contener malware. Incluso las páginas web pueden infectarnos con tan solo visitarlas. Por eso es fundamental contar con un buen antivirus y mantener actualizado el dispositivo.',
     },
     {
       id: 46,
       categoria: 'navegacion',
-      enunciado: '',
+      enunciado: 'Necesitas hacer una búsqueda por Internet a través del equipo de otra persona. ¿Cuál de las siguientes opciones sería la forma más segura de no dejar rastro?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'utilizando el modo incógnito',
+          correcta: true,
+        },
+        {
+          respuesta: 'borrando las cookies',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
-        },
-        {
-          respuesta: '',
+          respuesta: 'utilizando el navegador de Mozilla Firefox',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'Si no hay más remedio y debemos utilizar otro equipo, una buena opción será utilizar el modo incógnito del navegador, evitando introducir información personal en páginas web.',
     },
     {
       id: 47,
       categoria: 'navegacion',
-      enunciado: '',
+      enunciado: 'recibes un email de tu banco pidiéndote que accedas a un enlace para confirmar tus datos personales. ¿Qué haces?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'respondo al correo para que me faciliten más informacion',
           correcta: false,
         },
         {
-          respuesta: '',
+          respuesta: 'lo abro y sigo las indicaciones del mensaje, parece un tema importante',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false, 
+          respuesta: 'los bancos nunca piden estos datos por correo, lo elimino',
+          correcta: true, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'Se debe tener precaución con los mensajes que solicitan información personal bajo alguna circunstancia. Una entidad financiera o servicio web con cierta reputación jamás nos pedirá nuestros datos personales por correo.',
     },
     {
       id: 48,
       categoria: 'navegacion',
-      enunciado: '',
+      enunciado: 'a la hora de navegar por páginas web, la opción más segura es:',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'webs con HTTP',
           correcta: false,
         },
         {
-          respuesta: '',
+          respuesta: 'webs con HTTP y certificado digital',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false, 
+          respuesta: 'webs con HTTPS y certificado digital',
+          correcta: true, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'el certificado digital y el protocolo HTTPS actúan como sellos de confianza que nos aseguran que las comunicaciones que hagamos dentro de la web estarán cifradas y serán seguras.',
     },
     {
       id: 49,
       categoria: 'navegacion',
-      enunciado: '',
+      enunciado: 'un buen hábito cuando navegamos online es:',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'guardar las credenciales en nuestro navegador para no tener que introducirlas manualmente con frecuencia',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
+          respuesta: 'eliminar las cookies, la cache y el historial del navegador cada cierto tiempo',
+          correcta: true,
         },
         {
-          respuesta: '',
+          respuesta: 'conectarse a redes wifi públicas',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'de este modo, eliminaremos el rastro que vamos dejando cuando navegamos por Internet, protegiendo mejor nuestra privacidad y seguridad online.',
     },
     {
       id: 50,
       categoria: 'navegacion',
-      enunciado: '',
+      enunciado: 'Para una navegación segura, el protocolo de seguridad que debes tener configurado en tu router es:',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'protocolo WPA2',
+          correcta: true,
+        },
+        {
+          respuesta: 'protocolo WEP',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
-        },
-        {
-          respuesta: '',
+          respuesta: 'protocolo HTTPS',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'hoy en dia, el protocolo WPA2 se considera el protocolo más seguro. El resto presentan vulnerabilidades que pueden ser aprovechadas por los ciberdelincuentes.',
     },
     {
       id: 51,
@@ -1231,7 +1268,9 @@ module.exports = {
   ],
 };
 
+module.exports = data;
 
+checkData();
 
 
 
