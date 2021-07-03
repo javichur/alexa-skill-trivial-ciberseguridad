@@ -450,58 +450,58 @@ module.exports = {
     {
       id: 22,
       categoria: 'rrss',
-      enunciado: '',
+      enunciado: 'tras mucho esfuerzo, has conseguido sacarte el carnet de conducir, así que decides subir una foto de él a tus redes sociales. ¿Es una buena idea?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'Sí, ¿qué peligro va a tener?',
           correcta: false,
         },
         {
-          respuesta: '',
+          respuesta: 'sí, si tengo configurada correctamente las opciones de privacidad de mi cuenta',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false, 
+          respuesta: 'no. La publicacion de datos sensibles en Internet nunca lo es',
+          correcta: true, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'todo lo que publicamos en Internet permanecerá publicado. Si compartimos datos personales en las redes sociales, corremos el riesgo de que terceros se hagan con ellos para usos delictivos, como la suplantación de identidad.',
     },
     {
       id: 23,
       categoria: 'rrss',
-      enunciado: '',
+      enunciado: 'has visto un meme en Internet que puede ser ofensivo para algunos colectivos, pero decides publicarlo igualmente. ¿Crees que tus publicaciones pueden afectarte negativamente en el futuro?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'Sí, si se trata de contenido ofensivo o que afecta a mi identidad digital',
+          correcta: true,
+        },
+        {
+          respuesta: 'sí, pero solamente si publico información personal',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
-        },
-        {
-          respuesta: '',
+          respuesta: 'no, es mi muro y puedo publicar lo que quiera',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'publicar contenidos que puedan ser ofensivos en cualquier red social puede tener consecuencias negativas para tu identidad digital.',
     },
     {
       id: 24,
       categoria: 'rrss',
-      enunciado: '',
+      enunciado: 'la técnica utilizada por los ciberdelincuentes basadas en el engaño y la manipulación para hacerse con nuestros datos, se conoce como:',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'phishing',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
+          respuesta: 'ingenieria social',
+          correcta: true,
         },
         {
-          respuesta: '',
+          respuesta: 'e-fraudes',
           correcta: false, 
         },
       ],
@@ -510,122 +510,122 @@ module.exports = {
     {
       id: 25,
       categoria: 'rrss',
-      enunciado: '',
+      enunciado: 'tts aportaciones, publicaciones, comentarios y gustos en Internet conforman la imagen que los demás tienen de ti en la red. ¿Cómo se conoce a este concepto?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'egosurfing',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
+          respuesta: 'identidad digital',
+          correcta: true,
         },
         {
-          respuesta: '',
+          respuesta: 'E-reputación',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'la identidad digital es la imagen que proyectos sobre ti en la Red, es decir, cómo te ven y perciben el resto de usuarios.',
     },
     {
       id: 26,
       categoria: 'rrss',
-      enunciado: '',
+      enunciado: 'un amigo comparte una noticia explosiva sobre un supuesto caso de corrupción en una gran multinacional en la que varios famosos están implicados. ¿Qué haces?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'contrasto la noticia buscando información sobre el tema en otros medios',
+          correcta: true,
+        },
+        {
+          respuesta: 'como confío totalmente en la persona que me lo envía, comparto la noticia',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
-        },
-        {
-          respuesta: '',
+          respuesta: 'la comparto rápidamente entre mis contactos. ¡Que todo el mundo se entere!',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'una buena práctica para combatir los bulos y las fake news es contrastar la información, buscando en fuentes de información confiables y con buena reputación.',
     },
     {
       id: 27,
       categoria: 'rrss',
-      enunciado: '',
+      enunciado: 'un rumor en la red que no tiene ninguna base ni está apoyado en ninguna fuente fiable recibe el nombre de:',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'cadena',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
+          respuesta: 'hoax',
+          correcta: true,
         },
         {
-          respuesta: '',
+          respuesta: 'phishing',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'el término Hoax o bulo, hace referencia a cualquier rumor que circula por la Red infundado.',
     },
     {
       id: 28,
       categoria: 'rrss',
-      enunciado: '',
+      enunciado: 'cuando creas una cuenta en una red social, ¿qué es lo primero que deberías hacer?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'no publicar ni utilizar ninguna foto personal',
           correcta: false,
         },
         {
-          respuesta: '',
+          respuesta: 'agregar a mis familiares y amigos mas íntimos',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false, 
+          respuesta: 'configurar la seguridad y privacidad de mi perfil',
+          correcta: true, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'al crearnos una cuenta en cualquier red social, el primer paso siempre debe ser configurar debidamente las opciones de seguridad y privacidad.',
     },
     {
       id: 29,
       categoria: 'rrss',
-      enunciado: '',
+      enunciado: '¿Cuál de las siguientes opciones puede ayudarte a identificar una noticia falsa (fake new)?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'analizar el número de likes de la noticia',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
+          respuesta: 'comprobar la noticia en otras fuentes de información',
+          correcta: true,
         },
         {
-          respuesta: '',
+          respuesta: 'ambas opciones son correctas',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'si una noticia te da mala espina y no te terminas de fiar, lo mejor será contrastarla con otras fuentes de información para ver si es cierta o no.',
     },
     {
       id: 30,
       categoria: 'rrss',
-      enunciado: '',
+      enunciado: 'buscar información sobre nosotros en Internet sirve para detectar perfiles falsos con nuestros datos. ¿Cómo se llama esta búsqueda?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'egosurfing',
+          correcta: true,
+        },
+        {
+          respuesta: 'autophishing',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
-        },
-        {
-          respuesta: '',
+          respuesta: 'grooming',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'el egosurfing es una práctica muy útil para ver qué se dice sobre nosotros en la Red y para detectar perfiles falsos con nuestra información.',
     },
     {
       id: 31,
@@ -650,182 +650,182 @@ module.exports = {
     {
       id: 32,
       categoria: 'dispositivos',
-      enunciado: '',
+      enunciado: 'quiero deshacerme de mi dispositivo móvil, pero me preocupa la información almacenada en él. ¿Qué seria lo adecuado?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'crear una copia de seguridad de la información, eliminar los datos y cuentas manualmente y restablecer el dispositivo al estado de fábrica',
+          correcta: true,
+        },
+        {
+          respuesta: 'volver el dispositivo al estado de fábrica, así queda como nuevo',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
-        },
-        {
-          respuesta: '',
+          respuesta: 'sacar la tarjeta de almacenamiento es suficiente, es donde se encuentra toda la información relevante del teléfono.',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'la mejor manera de eliminar toda la información de nuestro dispositivo de forma segura es eliminando los datos y cuentas manualmente y restableciéndolo luego al estado de fábrica. Si creamos antes una copia de seguridad, podremos volcar los datos a un nuevo dispositivo.',
     },
     {
       id: 33,
       categoria: 'dispositivos',
-      enunciado: '',
+      enunciado: 'tu dispositivo ha comenzado a lanzar alertas sobre distintas actualizaciones pendientes de instalar. ¿Qué debes hacer?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'no hago caso al mensaje, no quiero nuevas funcionalidades ya que consumen más recursos',
           correcta: false,
         },
         {
-          respuesta: '',
+          respuesta: 'dejo la actualización para otro día que tenga más tiempo',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false, 
+          respuesta: 'aplico la actualización lo antes posible',
+          correcta: true, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'una actualización nos protege de posibles brechas de seguridad, por lo que es fundamental que las instalemos lo antes posible.',
     },
     {
       id: 34,
       categoria: 'dispositivos',
-      enunciado: '',
+      enunciado: 'cuando se habla de rootear o hacer jailbreacking a un dispositivo, se refiere a:',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'hackear un dispositivo para tener acceso a todos sus datos',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
+          respuesta: 'liberar el dispositivo para adquirir permisos de administrador',
+          correcta: true,
         },
         {
-          respuesta: '',
+          respuesta: 'devolver el dispositivo a su estado de fábrica.',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'estos procedimientos permiten liberar el dispositivo de las restricciones del fabricante y adquirir permisos de administración. Sin embargo, no están exentos de riesgos, como la pérdida de garantía o mayor probabilidad de infección por malware.',
     },
     {
       id: 35,
       categoria: 'dispositivos',
-      enunciado: '',
+      enunciado: '¿qué haces si empiezas a visualizar anuncios en tu dispositivo, el ratón se mueve solo o va mucho más lento?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'reinicio el ordenador y conecto un USB para pasar mis archivos a otro equipo',
           correcta: false,
         },
         {
-          respuesta: '',
+          respuesta: 'reinicio el ordenador a ver si se soluciona solo',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false, 
+          respuesta: 'me aseguro de que el antivirus está actualizado y realizeo un análisis con él',
+          correcta: true, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'ante los síntomas descritos, es probable que nuestro dispositivo esté infectado. Lo mejor es utilizar un antivirus actualizado para eliminar el malware que se haya podido instalar.',
     },
     {
       id: 36,
       categoria: 'dispositivos',
-      enunciado: '',
+      enunciado: 'un malware capaz de cifrar todos tus ficheros para luego pedirte dinero a cambio se conoce como:',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'ransomware',
+          correcta: true,
+        },
+        {
+          respuesta: 'keylogger',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
-        },
-        {
-          respuesta: '',
+          respuesta: 'troyano',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'el ransomware es un tipo de malware que tiene como objetivo cifrar todo el contenido de nuestros dispositivos para pedir un rescate (dinero) a cambio de la clave de descifrado.',
     },
     {
       id: 37,
       categoria: 'dispositivos',
-      enunciado: '',
+      enunciado: 'te has instalado una app con funcionalidad de linterna desde la tienda oficial y te pide los siguientes permisos: cámara, archivos multimedia, contactos, SMS. ¿Cuáles debes aceptar?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'todos, ya que se ha descargado de una tienda oficial',
           correcta: false,
         },
         {
-          respuesta: '',
+          respuesta: 'cámara, archivos multimedia y contactos',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false, 
+          respuesta: 'cámara',
+          correcta: true, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'debemos aceptar únicamente los permisos imprescindibles para la función de la app. En el ejemplo, solo es necesario el permiso de cámara para su funcionamiento.',
     },
     {
       id: 38,
       categoria: 'dispositivos',
-      enunciado: '',
+      enunciado: 'una forma segura de proteger tu dispositivo y la información almacenada en él es:',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'cambiar el PIN frecuentemente',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
+          respuesta: 'cifrarlo y protegerlo con una clave o PIN',
+          correcta: true,
         },
         {
-          respuesta: '',
+          respuesta: 'no utilizar la conexión Bluetooth',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'al cifrar nuestro dispositivo, toda la información contenida en él también se cifrará, protegiéndola de terceros, especialmente en caso de pérdida o robo.',
     },
     {
       id: 39,
       categoria: 'dispositivos',
-      enunciado: '',
+      enunciado: '¿cuál de las siguientes recomendaciones deberías llevar a cabo si te encontrases en un lugar que proporciona una red wifi pública?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: 'conectarse, así se ahorran datos móviles',
           correcta: false,
         },
         {
-          respuesta: '',
+          respuesta: 'revisar las redes wifi disponibles y conectarte solo a la que tenga mejor señal',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false, 
+          respuesta: 'Desactivar la opción que permite al dispositivo conectarse automáticamente',
+          correcta: true, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'es conveniente desactivar la opción que permite conectarnos automáticamente a redes inalámbricas para minimizar los riesgos de conectarse a redes wifi.',
     },
     {
       id: 40,
       categoria: 'dispositivos',
-      enunciado: '',
+      enunciado: 'cuando se trata de realizar copias de seguridad, lo ideal es seguir la regla 3-2-1, pero ¿qué significa?',
       respuestas: [
         {
-          respuesta: '',
+          respuesta: '3 copias en 2 soportes diferentes y 1 en un lugar físico distinto',
+          correcta: true,
+        },
+        {
+          respuesta: '3 copias de seguridad en 2 carpetas distintas y 1 cifrada',
           correcta: false,
         },
         {
-          respuesta: '',
-          correcta: false,
-        },
-        {
-          respuesta: '',
+          respuesta: '3 copias de seguridad en 2 soportes diferentes y 1 en la nube',
           correcta: false, 
         },
       ],
-      aclaracion: '',
+      aclaracion: 'la regla 3-2-1 se refiere a mantener 3 copias de seguridad, en 2 soportes distintos, como puede ser la nube y un disco duro externo, y 1 de las copias en un lugar fisico distinto.',
     },
     {
       id: 41,
