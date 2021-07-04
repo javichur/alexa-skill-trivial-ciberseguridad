@@ -116,11 +116,11 @@ const data = {
           correcta: false,
         },
         {
-          respuesta: 'nada crítico porque tengo antivirus instalado y, además, si alguien la adivina, no tengo nada que esconder.',
+          respuesta: 'nada crítico porque tengo antivirus instalado y, además, si alguien la adivina, no tengo nada que esconder',
           correcta: false,
         },
         {
-          respuesta: 'De todo. Es como dejar una puesta abierta para que roben todos tus datos.',
+          respuesta: 'De todo. Es como dejar una puesta abierta para que roben todos tus datos',
           correcta: true,
         },
       ],
@@ -1137,7 +1137,7 @@ const data = {
           correcta: false,
         },
         {
-          respuesta: 'quiere seguir la comunicación por WhatsApp.',
+          respuesta: 'quiere seguir la comunicación por WhatsApp',
           correcta: true,
         },
         {
