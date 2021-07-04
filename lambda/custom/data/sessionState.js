@@ -4,7 +4,7 @@ module.exports = {
     UNINITIALIZED: -1,
     LAUNCH: 1,
     HELP: 2,
-    HELLO_WORLD: 3,
+    PLAYING: 3,
   }),
 
   /**
@@ -38,31 +38,31 @@ module.exports = {
   },
 
   /**
-   * Sample method to save "testAttribute"
+   * Sample method to save "currentQuestion"
    * @param {*} handlerInput
    * @param {string} testAtt
    */
-  setTestAttribute(handlerInput, testAtt) {
+  setCurrentQuestion(handlerInput, q) {
     const { attributesManager } = handlerInput;
     const sessionAttributes = attributesManager.getSessionAttributes();
 
-    sessionAttributes.testAttribute = testAtt; // save
+    sessionAttributes.currentQuestion = q; // save
 
     attributesManager.setSessionAttributes(sessionAttributes);
   },
 
   /**
-   * Returns value of "testAttribute" from session.
+   * Returns value of "currentQuestion" from session.
    * Returns null if not exists.
    * @param {*} handlerInput
    */
-  getTestAttribute(handlerInput) {
+  getCurrentQuestion(handlerInput) {
     const { attributesManager } = handlerInput;
 
     const sessionAttributes = attributesManager.getSessionAttributes();
 
-    if (sessionAttributes.testAttribute) {
-      return sessionAttributes.testAttribute;
+    if (sessionAttributes.currentQuestion) {
+      return sessionAttributes.currentQuestion;
     }
 
     return null;

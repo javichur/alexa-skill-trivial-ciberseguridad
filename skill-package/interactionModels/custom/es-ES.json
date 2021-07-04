@@ -25,7 +25,9 @@
             "repite",
             "repite por favor",
             "repetir",
-            "me lo repites"
+            "me lo repites",
+            "repíteme la pregunta",
+            "repíteme la pregunta por favor"
           ]
         },
         {
@@ -33,6 +35,18 @@
           "samples": [
             "salir",
             "stop"
+          ]
+        },
+        {
+          "name": "JugarIntent",
+          "samples": [
+            "quiero jugar",
+            "jugar",
+            "juguemos",
+            "jugamos",
+            "vamos a jugar",
+            "vale jugar",
+            "ok jugar"
           ]
         },
         {
@@ -54,6 +68,31 @@
             "La {respuesta}",
             "La respuesta correcta {respuesta}",
             "La respuesta correcta es {respuesta}"
+          ]
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": [
+            "pasar a la siguiente pregunta",
+            "pasar a otra pregunta",
+            "pasar a la siguiente",
+            "saltar esta pregunta",
+            "salta esta pregunta",
+            "sáltate esta pregunta",
+            "sáltate",
+            "saltar",
+            "salta",
+            "omitir la pregunta",
+            "omitir esta pregunta",
+            "omitir",
+            "continua",
+            "continuar",
+            "otra pregunta",
+            "next",
+            "siguiente pregunta por favor",
+            "siguiente por favor",
+            "siguiente pregunta",
+            "siguiente"
           ]
         },
         {

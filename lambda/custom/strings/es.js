@@ -1,15 +1,9 @@
 const p = {
-  SKILL_NAME: 'El Template',
-  WELCOME_TO: 'Bienvenido a',
-  SAMPLES: '"hola", "ayuda", ',
-  HELLO_WORLD: 'Hola Mundo',
+  SKILL_NAME: 'Trivial Ciberseguridad',
+  WELCOME_TO: 'Bienvenido a Trivial Ciberseguridad. Demuestra que eres el que más sabe sobre contraseñas, compras online, redes sociales y mensajería instantánea, seguridad en dispositivos, navegación segura y fraudes online. Las preguntas han sido creadas por la Oficina de la Seguridad del Internauta (OSI) de INCIBE.',
+  SAMPLES: '"elijo la respuesta A", "la B", "ayuda", "repíteme la pregunta" o "siguiente pregunta"',
   GOODBYE: '¡Hasta luego!',
-  SESSION_NOT_SAVED_YET: 'Aún no has guardado un valor en la sesión de la skill. Di "guardar sesión".',
-  SESSION_LOADED: 'Acabo de leer el valor {0} de la sesión de la skill.',
-  SESSION_SAVED: 'Acabo de guardar el valor {0} en la sesión de la skill. Di "leer sesión".',
-  COLOR_SAID: 'Has dicho el color {0}',
   FALLBACK: 'No entiendo lo que quieres decir en este contexto. ',
-
 
   // Dynamic entities (slots)
   DYNAMIC_ENTITIES_CLEANED: 'Entidades dinámicas borradas. ',
@@ -40,7 +34,7 @@ const p = {
     },
   ],
 };
-p.HELP = `Puedes decirme por ejemplo ${p.SAMPLES}. ¿Qué dices?`;
+p.HELP = `Te haré preguntas sobre ciberseguridad y puedes responderme por ejemplo ${p.SAMPLES}. Si estás listo para jugar, di "Jugar". ¿Qué dices?`;
 p.HINT_HOME = `Di ${p.SAMPLES}`;
 
 module.exports = p;
