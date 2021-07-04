@@ -1,7 +1,7 @@
 /* eslint-disable  no-console */
 /* eslint-disable global-require */
-const AplTemplates = require('../apl/aplTemplates.js');
-const SessionState = require('../data/sessionState.js');
+const AplTemplates = require('../apl/aplTemplates');
+const SessionState = require('../data/sessionState');
 
 module.exports = {
   SaveSessionIntentHandler: {

@@ -1,41 +1,3 @@
-function checkData() {
-  console.log(`Iniciando análisis...`);
-
-  let numErrores = 0;
-
-  for (const one of data.PREGUNTAS) {
-    // console.log(`${one.id}.`);
-    if (data.CATEGORIAS.filter(cat => cat.id === one.categoria).length != 1) {
-      console.log(`${one.id}. Error categoría (${one.categoria})`);
-      numErrores++;
-    }
-
-    if (one.enunciado.length == 0) {
-      console.log(`${one.id}. Error falta enunciado.`);
-      numErrores++;
-    }
-
-    if (one.respuestas.length < 2) {
-      console.log(`${one.id}. Error faltan respuestas.`);
-      numErrores++;
-    } else if (one.respuestas.filter(r => r.respuesta.length == 0).length != 0) {
-      console.log(`${one.id}. Error. Falta texto en la respuesta.`);
-      numErrores++;
-    } else if (one.respuestas.filter(r => r.correcta == true).length != 1) {
-      console.log(`${one.id}. Error. Debe haber 1 respuesta correcta.`);
-      numErrores++;
-    }
-
-    if (one.aclaracion.length == 0) {
-      console.log(`${one.id}. Error. Falta texto aclaratorio.`);
-      numErrores++;
-    }
-  }
-
-  console.log(`${data.PREGUNTAS.length} preguntas analizadas.`);
-  console.log(`${numErrores} errores encontrados.`);
-}
-
 const data = {
   CATEGORIAS: [
     {
@@ -61,7 +23,7 @@ const data = {
     {
       id: 'dispositivos',
       nombre: 'protección de dispositivos',
-    }
+    },
   ],
   PREGUNTAS: [
     {
@@ -80,7 +42,7 @@ const data = {
         {
           respuesta: 'cualquiera, lo importante es poder recordarla',
           correcta: false,
-        }
+        },
       ],
       aclaracion: 'una contraseña robusta será aquella que contenga una combinación de letras, números, mayúsculas, minúsculas y caracteres especiales.',
     },
@@ -100,7 +62,7 @@ const data = {
         {
           respuesta: 'no hago clic en el enlace y voy a mi navegador favorito',
           correcta: true,
-        }
+        },
       ],
       aclaracion: 'para evitar ser víctimas de un fraude de tipo phising (suplantación de identidad de un servicio), lo más seguro es no hacer clic y teclear directamente la URL legítima del servicio desde el navegador.',
     },
@@ -140,7 +102,7 @@ const data = {
         {
           respuesta: 'no, así no se me olvida',
           correcta: false,
-        }
+        },
       ],
       aclaracion: 'utilizar una misma contraseña para varias cuentas es muy peligroso. Una vez que una cuenta sea vulnerada, el resto podrían estar en peligro por efecto dominó',
     },
@@ -339,7 +301,7 @@ const data = {
         },
         {
           respuesta: 'no, nunca',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'si una tienda online carece de un apartado de términos y condiciones, hay que desconfiar.',
@@ -359,7 +321,7 @@ const data = {
         },
         {
           respuesta: 'descartar la compra',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'en estos casos, lo mejor es descartar la compra. Puede que, utilizando una tarjeta solo para compras online, corramos menos riesgos pero quizás nunca lleguemos a recibir el producto. Ante la más mínima señal de fraude, lo más seguro es descartar la compra.',
@@ -379,7 +341,7 @@ const data = {
         },
         {
           respuesta: 'utilizar solo las promociones que nos lleguen por email',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'si utilizamos una tarjeta exclusivamente para nuestras compras online, en caso de sufrir un fraude, no perderemos más que los datos y/o el dinero almacenado en dicha tarjeta.',
@@ -399,7 +361,7 @@ const data = {
         },
         {
           respuesta: 'nunca',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'aunque la web nos ofrezca la confianza de que nuestras comunicaciones no van a ser espiadas, no es recomendable almacenar este tipo de datos personales. No sabemos si la seguridad del servicio web puede llegar a ser vulnerada, y nuestros datos filtrados.',
@@ -419,7 +381,7 @@ const data = {
         },
         {
           respuesta: 'presencia de marcas conocidas',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'las tiendas online fraudulentas suelen incluir descripciones pobres sobre sus productos, o imágenes de mala calidad o incluso robadas de otras webs.',
@@ -439,7 +401,7 @@ const data = {
         },
         {
           respuesta: 'ambas opciones',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'Una tienda online con precios demasiado bajos y productos similares con el mismo precio es candidata a ser un fraude.',
@@ -459,7 +421,7 @@ const data = {
         },
         {
           respuesta: 'ambas respuestas son correctas',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'las plataformas de pago actúan como intermediarias para evitar que nuestros datos se filtren, y nos ayudarán a la hora de recuperar nuestro dinero en caso de fraude.',
@@ -479,7 +441,7 @@ const data = {
         },
         {
           respuesta: 'ambas opciones son correctas',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'para detectar un perfil falso, podemos analizar el número de seguidores que tiene en relación con los perfiles que sigue, o comprobar si su imagen de perfil o el resto de imágenes publicadas no sean suyas, mediante Google imágenes.',
@@ -499,7 +461,7 @@ const data = {
         },
         {
           respuesta: 'no. La publicacion de datos sensibles en Internet nunca lo es',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'todo lo que publicamos en Internet permanecerá publicado. Si compartimos datos personales en las redes sociales, corremos el riesgo de que terceros se hagan con ellos para usos delictivos, como la suplantación de identidad.',
@@ -519,7 +481,7 @@ const data = {
         },
         {
           respuesta: 'no, es mi muro y puedo publicar lo que quiera',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'publicar contenidos que puedan ser ofensivos en cualquier red social puede tener consecuencias negativas para tu identidad digital.',
@@ -539,7 +501,7 @@ const data = {
         },
         {
           respuesta: 'e-fraudes',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'la ingeniería social se basa en el engaño y la manipulción para conseguir que los usuarios hagamos lo que nos piden los ciberdelincuentes, como por ejemplo, que demos nuestros datos personales.',
@@ -559,7 +521,7 @@ const data = {
         },
         {
           respuesta: 'e-reputación',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'la identidad digital es la imagen que proyectos sobre ti en la Red, es decir, cómo te ven y perciben el resto de usuarios.',
@@ -579,7 +541,7 @@ const data = {
         },
         {
           respuesta: 'la comparto rápidamente entre mis contactos. ¡Que todo el mundo se entere!',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'una buena práctica para combatir los bulos y las fake news es contrastar la información, buscando en fuentes de información confiables y con buena reputación.',
@@ -599,7 +561,7 @@ const data = {
         },
         {
           respuesta: 'phishing',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'el término Hoax o bulo, hace referencia a cualquier rumor que circula por la Red infundado.',
@@ -619,7 +581,7 @@ const data = {
         },
         {
           respuesta: 'configurar la seguridad y privacidad de mi perfil',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'al crearnos una cuenta en cualquier red social, el primer paso siempre debe ser configurar debidamente las opciones de seguridad y privacidad.',
@@ -639,7 +601,7 @@ const data = {
         },
         {
           respuesta: 'ambas opciones son correctas',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'si una noticia te da mala espina y no te terminas de fiar, lo mejor será contrastarla con otras fuentes de información para ver si es cierta o no.',
@@ -659,7 +621,7 @@ const data = {
         },
         {
           respuesta: 'grooming',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'el egosurfing es una práctica muy útil para ver qué se dice sobre nosotros en la Red y para detectar perfiles falsos con nuestra información.',
@@ -679,7 +641,7 @@ const data = {
         },
         {
           respuesta: 'phishing',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'dentro de las medidas de protección, el antivirus y el cortafuegos (firewall) se encuentran entre las mas básicas. Su función es la de protegernos ante distintos tipos de ataque a la seguridad de nuestro equipo.',
@@ -699,7 +661,7 @@ const data = {
         },
         {
           respuesta: 'sacar la tarjeta de almacenamiento es suficiente, es donde se encuentra toda la información relevante del teléfono.',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'la mejor manera de eliminar toda la información de nuestro dispositivo de forma segura es eliminando los datos y cuentas manualmente y restableciéndolo luego al estado de fábrica. Si creamos antes una copia de seguridad, podremos volcar los datos a un nuevo dispositivo.',
@@ -719,7 +681,7 @@ const data = {
         },
         {
           respuesta: 'aplico la actualización lo antes posible',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'una actualización nos protege de posibles brechas de seguridad, por lo que es fundamental que las instalemos lo antes posible.',
@@ -739,7 +701,7 @@ const data = {
         },
         {
           respuesta: 'devolver el dispositivo a su estado de fábrica.',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'estos procedimientos permiten liberar el dispositivo de las restricciones del fabricante y adquirir permisos de administración. Sin embargo, no están exentos de riesgos, como la pérdida de garantía o mayor probabilidad de infección por malware.',
@@ -759,7 +721,7 @@ const data = {
         },
         {
           respuesta: 'me aseguro de que el antivirus está actualizado y realizeo un análisis con él',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'ante los síntomas descritos, es probable que nuestro dispositivo esté infectado. Lo mejor es utilizar un antivirus actualizado para eliminar el malware que se haya podido instalar.',
@@ -779,7 +741,7 @@ const data = {
         },
         {
           respuesta: 'troyano',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'el ransomware es un tipo de malware que tiene como objetivo cifrar todo el contenido de nuestros dispositivos para pedir un rescate (dinero) a cambio de la clave de descifrado.',
@@ -799,7 +761,7 @@ const data = {
         },
         {
           respuesta: 'cámara',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'debemos aceptar únicamente los permisos imprescindibles para la función de la app. En el ejemplo, solo es necesario el permiso de cámara para su funcionamiento.',
@@ -819,7 +781,7 @@ const data = {
         },
         {
           respuesta: 'no utilizar la conexión Bluetooth',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'al cifrar nuestro dispositivo, toda la información contenida en él también se cifrará, protegiéndola de terceros, especialmente en caso de pérdida o robo.',
@@ -839,7 +801,7 @@ const data = {
         },
         {
           respuesta: 'Desactivar la opción que permite al dispositivo conectarse automáticamente',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'es conveniente desactivar la opción que permite conectarnos automáticamente a redes inalámbricas para minimizar los riesgos de conectarse a redes wifi.',
@@ -859,7 +821,7 @@ const data = {
         },
         {
           respuesta: '3 copias de seguridad en 2 soportes diferentes y 1 en la nube',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'la regla 3-2-1 se refiere a mantener 3 copias de seguridad, en 2 soportes distintos, como puede ser la nube y un disco duro externo, y 1 de las copias en un lugar fisico distinto.',
@@ -879,7 +841,7 @@ const data = {
         },
         {
           respuesta: 'no. Incluso uno fiable puede presentar vulnerabilidades',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'al igual que las aplicaciones, estos complementos pueden ser maliciosos o presentar vulnerabilidades. Lo mejor es descargarlos de sitios oficiales y revisar los comentarios y valoraciones de otros usuarios.',
@@ -899,7 +861,7 @@ const data = {
         },
         {
           respuesta: 'ambas respuestas son correctas',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'manteniendo el dispositivo actualizado y contando con herramientas de protección, como el antivirus, nos aseguramos de que nuestro dispositivo esta más protegido de posibles amenazas.',
@@ -919,7 +881,7 @@ const data = {
         },
         {
           respuesta: 'de riesgos de explotación de vulnerabilidades',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'el protocolo HTTPS permite una conexión segura mediante un cifrado SSL que posibilita que los datos viajen de forma segura entre tu equipo y el servidor de la página web.',
@@ -939,7 +901,7 @@ const data = {
         },
         {
           respuesta: 'ambas respuestas son correctas',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'una configuración segura de nuestro router pasa por cambiar la contraseña de acceso, la de la red wifi y, si en el caso de detectar dispositivos desconocidos, debemos bloquearlos y realizar un filtrado de direcciones MAC.',
@@ -959,7 +921,7 @@ const data = {
         },
         {
           respuesta: 'cualquier archivo puede contener software malicioso',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'Cualquier archivo descargado de Internet puede contener malware. Incluso las páginas web pueden infectarnos con tan solo visitarlas. Por eso es fundamental contar con un buen antivirus y mantener actualizado el dispositivo.',
@@ -979,7 +941,7 @@ const data = {
         },
         {
           respuesta: 'utilizando el navegador de Mozilla Firefox',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'Si no hay más remedio y debemos utilizar otro equipo, una buena opción será utilizar el modo incógnito del navegador, evitando introducir información personal en páginas web.',
@@ -999,7 +961,7 @@ const data = {
         },
         {
           respuesta: 'los bancos nunca piden estos datos por correo, lo elimino',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'Se debe tener precaución con los mensajes que solicitan información personal bajo alguna circunstancia. Una entidad financiera o servicio web con cierta reputación jamás nos pedirá nuestros datos personales por correo.',
@@ -1019,7 +981,7 @@ const data = {
         },
         {
           respuesta: 'webs con HTTPS y certificado digital',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'el certificado digital y el protocolo HTTPS actúan como sellos de confianza que nos aseguran que las comunicaciones que hagamos dentro de la web estarán cifradas y serán seguras.',
@@ -1039,7 +1001,7 @@ const data = {
         },
         {
           respuesta: 'conectarse a redes wifi públicas',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'de este modo, eliminaremos el rastro que vamos dejando cuando navegamos por Internet, protegiendo mejor nuestra privacidad y seguridad online.',
@@ -1059,7 +1021,7 @@ const data = {
         },
         {
           respuesta: 'protocolo HTTPS',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'hoy en dia, el protocolo WPA2 se considera el protocolo más seguro. El resto presentan vulnerabilidades que pueden ser aprovechadas por los ciberdelincuentes.',
@@ -1079,7 +1041,7 @@ const data = {
         },
         {
           respuesta: 'buscar la fuente y contrastar',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'internet esta lleno de bulos y noticias falsas. Para combatir la desinformacion, es recomendable contrastar la informacion con otras fuentes.',
@@ -1099,7 +1061,7 @@ const data = {
         },
         {
           respuesta: 'copio el enlace y accedo desde modo incognito',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'los ciberdelincuentes pueden utilizar estos formularios para hacerse con nuestra información más personal. Para evitario, recuerda contrastar e investigar la informacion del mensaje con otras fuentes y pasar el cursor por el link para asegurarte que te redirige a un sitio legítimo.',
@@ -1119,7 +1081,7 @@ const data = {
         },
         {
           respuesta: 'desconfias. Le pides una prueba primero',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'este tipo de ataque se conoce como sextorsión. Tratan de asustarnos diciendo que tienen material comprometido sobre nosotros para que realicemos un pago a cambio de supuestamente no difundirlo.',
@@ -1139,7 +1101,7 @@ const data = {
         },
         {
           respuesta: 'Afirmación, Rectificación, Comprobación y Oposición',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'los derechos ARCO hacen referencia al derecho de Acceso, Rectificación, Cancelación y Oposición que tenemos en relación al uso que se hace de nuestros datos.',
@@ -1159,7 +1121,7 @@ const data = {
         },
         {
           respuesta: 'smishing',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'este tipo de ciberataque se conoce como smishing, utilizan los SMS para engañarnos y hacer que nos descarguemos malware o que hagamos clic en webs maliciosas.',
@@ -1180,7 +1142,7 @@ const data = {
         },
         {
           respuesta: 'tiene varios meses de antigüedad en la web con muchas valoraciones',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'si un vendedor trata de utilizar otro canal de comunicación o forma de pago distinto al de la web, podría tratarse de un fraude, es una práctica muy habitual utilizada entre los ciberdelincuentes.',
@@ -1200,7 +1162,7 @@ const data = {
         },
         {
           respuesta: 'ambas opciones',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'aquellas ofertas de empleo que piden llamar a un teléfono de tarificación especial o solicitan un dinero por adelantado son candidatas a tratarse de un fraude.',
@@ -1220,7 +1182,7 @@ const data = {
         },
         {
           respuesta: 'todas las opciones son correctas',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'Si creemos ser víctima de un posible fraude de este tipo, lo más importante es deshabilitar cualquier cambio en nuestra configuración, desinstalar cualquier app y cambiar las contraseñas de nuestros equipos. Un análisis con nuestro antivirus también sería recomendable.',
@@ -1240,7 +1202,7 @@ const data = {
         },
         {
           respuesta: 'desconfiar de las agencias',
-          correcta: true, 
+          correcta: true,
         },
       ],
       aclaracion: 'la clave para detectar posibles fraudes en los alquileres es revisar detenidamente las descripciones e imágenes. Además, conviene utilizar Google Maps y Google Imágenes para comprobar que la dirección y las fotos utilizadas son reales.',
@@ -1260,20 +1222,12 @@ const data = {
         },
         {
           respuesta: 'copiar el enlace y acceder desde modo incognito',
-          correcta: false, 
+          correcta: false,
         },
       ],
       aclaracion: 'para evitar acabar siendo víctima de un fraude, recuerda pasar el cursor por encima para ver la web real a la que te redirige.',
-    }
+    },
   ],
 };
 
 module.exports = data;
-
-checkData();
-
-
-
-
-
-

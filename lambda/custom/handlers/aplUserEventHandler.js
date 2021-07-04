@@ -1,5 +1,5 @@
 /* eslint-disable  no-console */
-const AplTemplates = require('../apl/aplTemplates.js');
+const AplTemplates = require('../apl/aplTemplates');
 
 module.exports = {
   EventHandler: {

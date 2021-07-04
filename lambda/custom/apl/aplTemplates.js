@@ -17,7 +17,7 @@ module.exports = {
     if (handlerInput.requestEnvelope.context.System.device.supportedInterfaces['Alexa.Presentation.APL']) {
       /* si hay soporte APL... */
       const docu = require('./documentTextAndHint.json'); // eslint-disable-line global-require
-      const d = require('./myDataSourceTextAndHint'); // eslint-disable-line global-require
+      const d = require('./myDataSourceTextAndHint.json'); // eslint-disable-line global-require
 
       d.data.title = title;
       d.data.text = text;
@@ -71,7 +71,7 @@ module.exports = {
     if (handlerInput.requestEnvelope.context.System.device.supportedInterfaces['Alexa.Presentation.APL']) {
       /* si hay soporte APL... */
       const docu = require('./documentListado.json'); // eslint-disable-line global-require
-      const d = require('./myDataSourceListado'); // eslint-disable-line global-require
+      const d = require('./myDataSourceListado.json'); // eslint-disable-line global-require
 
       d.listTemplate1Metadata.title = title;
       d.listTemplate1ListData.listItems = list;

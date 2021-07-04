@@ -5,9 +5,23 @@ Skill Alexa creada utilizando la plantilla "Alexa Skills Clean Code Template": <
 
 Las preguntas del Trivial han sido elaboradas por OSI de INCIBE: <https://www.osi.es/es/campana/trivial-de-la-ciberseguridad>
 
+## ❓ 60 preguntas sobre...
+
+- 💬 Redes sociales y mensajería instantánea.
+
+- 🔑 Gestión de contraseñas.
+
+- 🛒 Compras online.
+
+- 💸 Fraudes online.
+
+- 🌐 Navegación segura.
+
+- 📱 Protección de dispositivos.
+
 ## 🐛 Erratas detectadas en el trivial original
 
-Durante la creación de esta skill se ha detectado posibles errores en el **10% de las preguntas** del trivial de INCIBE. La aclaración que aparece en cada tarjeta de trivial es correcta, pero ellos marcan en negrita una respuesta que creo no es la correcta. Ejemplos (esta Alexa skill dará por buena la opción corregida en rojo):
+Durante la creación de esta skill se ha detectado **posibles errores en el 10% de las preguntas** del trivial de INCIBE. La aclaración que aparece en cada tarjeta de trivial es correcta, pero ellos marcan en negrita una respuesta que creo no es la correcta. Ejemplos (esta Alexa skill dará por buena la opción corregida en rojo):
 
 ![errata 1](./original/errata-1.png "Errata 1") 
 ![errata 2](./original/errata-2.png "Errata 2")

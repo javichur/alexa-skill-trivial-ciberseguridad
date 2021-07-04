@@ -1,6 +1,6 @@
 /* eslint-disable  no-console */
 /* eslint-disable global-require */
-const AplTemplates = require('../apl/aplTemplates.js');
+const AplTemplates = require('../apl/aplTemplates');
 
 module.exports = {
   SaveDynamoDBIntentHandler: {
@@ -9,7 +9,7 @@ module.exports = {
         && handlerInput.requestEnvelope.request.intent.name === 'SaveDynamoDBIntent';
     },
     async handle(handlerInput) {
-      const dataHelper = require('../data/dataHelper.js');
+      const dataHelper = require('../data/dataHelper');
       const { userId } = handlerInput.requestEnvelope.context.System.user;
 
       const attributes = { name: 'Bob', country: 'Spain', city: 'Valencia' };
@@ -26,7 +26,7 @@ module.exports = {
         && handlerInput.requestEnvelope.request.intent.name === 'LoadDynamoDBIntent';
     },
     async handle(handlerInput) {
-      const dataHelper = require('../data/dataHelper.js');
+      const dataHelper = require('../data/dataHelper');
       const { userId } = handlerInput.requestEnvelope.context.System.user;
 
       const ret = await dataHelper.loadFromDynamoDB(userId);
