@@ -49,7 +49,7 @@ const data = {
     {
       id: 2,
       categoria: 'pass',
-      enunciado: '¿Qué debes hacer si recibes un correo que dice que tu cuenta ha podido ser vulnerada y te pide renovar la contrasseña a través de un enlace?',
+      enunciado: '¿Qué debes hacer si recibes un correo que dice que tu cuenta ha podido ser vulnerada y te pide renovar la contraseña a través de un enlace?',
       respuestas: [
         {
           respuesta: 'hago clic en el enlace y la cambio',
@@ -132,15 +132,15 @@ const data = {
       enunciado: '¿Cuál de las siguientes contraseñas consideras que es más segura?',
       respuestas: [
         {
-          respuesta: '10002943',
+          respuesta: '<say-as interpret-as="spell-out">10002943</say-as>',
           correcta: false,
         },
         {
-          respuesta: 'R3p0ster1A!',
+          respuesta: '<say-as interpret-as="spell-out">R3p0ster1A!</say-as>',
           correcta: true,
         },
         {
-          respuesta: '123QWEasd',
+          respuesta: '<say-as interpret-as="spell-out">123QWEasd</say-as>',
           correcta: false,
         },
       ],
@@ -232,7 +232,7 @@ const data = {
       enunciado: 'estás cerrando la compra de un artículo a través de una plataforma de compraventa. El vendedor te pide realizar una transferencia a un banco extranjero. ¿Es una transacción segura?',
       respuestas: [
         {
-          respuesta: 'sí, las transferencias son el método de pago mas seguro',
+          respuesta: 'sí, las transferencias son el método de pago más seguro',
           correcta: false,
         },
         {
@@ -244,7 +244,7 @@ const data = {
           correcta: true,
         },
       ],
-      aclaracion: 'el principal problema de realizar una transferencia a un banco extranjera es que, en caso de resultar ser víctima de un fraude y querer recuperar nuestro dinero, sería complicado.',
+      aclaracion: 'el principal problema de realizar una transferencia a un banco extranjero es que, en caso de resultar ser víctima de un fraude y querer recuperar nuestro dinero, sería complicado.',
     },
     {
       id: 12,
@@ -432,7 +432,7 @@ const data = {
       enunciado: '¿cómo podemos detectar si un perfil es falso en una red social?',
       respuestas: [
         {
-          respuesta: 'comprobar las imagenes del perfil en Google imagenes',
+          respuesta: 'comprobar las imágenes del perfil en Google imágenes',
           correcta: false,
         },
         {
@@ -509,7 +509,7 @@ const data = {
     {
       id: 25,
       categoria: 'rrss',
-      enunciado: 'tts aportaciones, publicaciones, comentarios y gustos en Internet conforman la imagen que los demás tienen de ti en la red. ¿Cómo se conoce a este concepto?',
+      enunciado: 'tus aportaciones, publicaciones, comentarios y gustos en Internet conforman la imagen que los demás tienen de ti en la red. ¿Cómo se conoce a este concepto?',
       respuestas: [
         {
           respuesta: 'egosurfing',
@@ -524,7 +524,7 @@ const data = {
           correcta: false,
         },
       ],
-      aclaracion: 'la identidad digital es la imagen que proyectos sobre ti en la Red, es decir, cómo te ven y perciben el resto de usuarios.',
+      aclaracion: 'la identidad digital es la imagen que proyectas sobre ti en la Red, es decir, cómo te ven y perciben el resto de usuarios.',
     },
     {
       id: 26,
@@ -649,7 +649,7 @@ const data = {
     {
       id: 32,
       categoria: 'dispositivos',
-      enunciado: 'quiero deshacerme de mi dispositivo móvil, pero me preocupa la información almacenada en él. ¿Qué seria lo adecuado?',
+      enunciado: 'quiero deshacerme de mi dispositivo móvil, pero me preocupa la información almacenada en él. ¿Qué sería lo adecuado?',
       respuestas: [
         {
           respuesta: 'crear una copia de seguridad de la información, eliminar los datos y cuentas manualmente y restablecer el dispositivo al estado de fábrica',
@@ -660,7 +660,7 @@ const data = {
           correcta: false,
         },
         {
-          respuesta: 'sacar la tarjeta de almacenamiento es suficiente, es donde se encuentra toda la información relevante del teléfono.',
+          respuesta: 'sacar la tarjeta de almacenamiento es suficiente, es donde se encuentra toda la información relevante del teléfono',
           correcta: false,
         },
       ],
@@ -952,7 +952,7 @@ const data = {
       enunciado: 'recibes un email de tu banco pidiéndote que accedas a un enlace para confirmar tus datos personales. ¿Qué haces?',
       respuestas: [
         {
-          respuesta: 'respondo al correo para que me faciliten más informacion',
+          respuesta: 'respondo al correo para que me faciliten más información',
           correcta: false,
         },
         {
@@ -1044,7 +1044,7 @@ const data = {
           correcta: true,
         },
       ],
-      aclaracion: 'internet esta lleno de bulos y noticias falsas. Para combatir la desinformacion, es recomendable contrastar la informacion con otras fuentes.',
+      aclaracion: 'internet esta lleno de bulos y noticias falsas. Para combatir la desinformación, es recomendable contrastar la información con otras fuentes.',
     },
     {
       id: 52,
@@ -1064,12 +1064,12 @@ const data = {
           correcta: false,
         },
       ],
-      aclaracion: 'los ciberdelincuentes pueden utilizar estos formularios para hacerse con nuestra información más personal. Para evitario, recuerda contrastar e investigar la informacion del mensaje con otras fuentes y pasar el cursor por el link para asegurarte que te redirige a un sitio legítimo.',
+      aclaracion: 'los ciberdelincuentes pueden utilizar estos formularios para hacerse con nuestra información más personal. Para evitario, recuerda contrastar e investigar la información del mensaje con otras fuentes y pasar el cursor por el link para asegurarte que te redirige a un sitio legítimo.',
     },
     {
       id: 53,
       categoria: 'fraudes',
-      enunciado: 'has recibido un correo, donde un desconocido afirma tener material íntimo sobre ti. Te pide realizar un pago a cambio de no difundirlo. ¿Qué deberias hacer?',
+      enunciado: 'has recibido un correo, donde un desconocido afirma tener material íntimo sobre ti. Te pide realizar un pago a cambio de no difundirlo. ¿Qué deberías hacer?',
       respuestas: [
         {
           respuesta: 'ignorar el mensaje',
@@ -1080,7 +1080,7 @@ const data = {
           correcta: false,
         },
         {
-          respuesta: 'desconfias. Le pides una prueba primero',
+          respuesta: 'desconfías. Le pides una prueba primero',
           correcta: false,
         },
       ],
@@ -1153,7 +1153,7 @@ const data = {
       enunciado: 'acaba de llegarte una oferta de trabajo muy interesante. Sin embargo, algo te huele mal. ¿Cuál de las siguientes opciones sería un indicio de fraude?',
       respuestas: [
         {
-          respuesta: 'pide contactar con un numero de tarificacion especial',
+          respuesta: 'pide contactar con un numero de tarificación especial',
           correcta: false,
         },
         {
@@ -1197,7 +1197,7 @@ const data = {
           correcta: false,
         },
         {
-          respuesta: 'revisar las descripciones e imagenes en busca de fallos o dobles',
+          respuesta: 'revisar las descripciones e imágenes en busca de fallos o dobles',
           correcta: false,
         },
         {

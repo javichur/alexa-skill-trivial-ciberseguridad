@@ -9,15 +9,20 @@ const dynamicEntitiesHandlers = require('./handlers/dynamicEntitiesIntentHandler
 const preguntas = require('./data/preguntas-trivial');
 
 
+function capitalizeFirstLetter(s) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+
 /**
   * @desc convierte una pregunta (enunciado y sus N opciones) en una única cadena de texto
   * @param pregunta $pregunta
   * @return string - texto listo para ser pronunciado por Alexa, incluye pregunta final.
 */
 function preguntaToString(pregunta) {
-  let ret = `${pregunta.enunciado} `;
+  let ret = `${capitalizeFirstLetter(pregunta.enunciado)} `;
   for (let i = 0; i < pregunta.respuestas.length; i += 1) {
-    ret += `${String.fromCharCode('A'.charCodeAt() + i)}: ${pregunta.respuestas[i].respuesta} `;
+    ret += `${String.fromCharCode('A'.charCodeAt() + i)}: ${capitalizeFirstLetter(pregunta.respuestas[i].respuesta)}. <break time="1s"/>`;
   }
 
   /* Importante terminar con una pregunta, para que el usuario sepa
@@ -153,9 +158,9 @@ const RespuestaIntentHandler = {
     if (itemNameMatched === getCorrectLetter(lastQuestion)) {
       speech = '¡Correcto!';
     } else {
-      speech = 'Error!';
+      speech = '¡Error!';
     }
-    speech += ` ${lastQuestion.aclaracion} <break time="2s"/>`;
+    speech += ` ${capitalizeFirstLetter(lastQuestion.aclaracion)} <break time="2s"/>`;
     speech += ' Siguiente pregunta. ';
 
     speech += getRandomQuestionSpeechAndSave(handlerInput);

@@ -1,6 +1,6 @@
 const p = {
   SKILL_NAME: 'Trivial Ciberseguridad',
-  WELCOME_TO: 'Bienvenido a Trivial Ciberseguridad. Demuestra que eres el que más sabe sobre contraseñas, compras online, redes sociales y mensajería instantánea, seguridad en dispositivos, navegación segura y fraudes online. Las preguntas han sido creadas por la Oficina de la Seguridad del Internauta (OSI) de INCIBE.',
+  WELCOME_TO: 'Bienvenido a Trivial Ciberseguridad. Demuestra que eres el que más sabe sobre contraseñas, compras online, redes sociales y mensajería instantánea, seguridad en dispositivos, navegación segura y fraudes online. Las preguntas han sido creadas por la Oficina de la Seguridad del Internauta (OSI) de INCIBE',
   SAMPLES: '"elijo la respuesta A", "la B", "ayuda", "repíteme la pregunta" o "siguiente pregunta"',
   GOODBYE: '¡Hasta luego!',
   FALLBACK: 'No entiendo lo que quieres decir en este contexto. ',
