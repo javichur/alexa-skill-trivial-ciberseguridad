@@ -1,9 +1,12 @@
 # 🔊 🧀 🛡️ alexa-skill-trivial-ciberseguridad
-Versión Alexa del trivial de la ciberseguridad. Preguntas creadas por la Oficina de la Seguridad del Internauta (OSI) de INCIBE.
 
-Skill Alexa creada utilizando la plantilla "Alexa Skills Clean Code Template": <https://github.com/javichur/alexa-skill-clean-code-template>
+![logo skill alexa Trivial Ciberseguridad](./skill-package/logo-108.png "logo skill alexa Trivial Ciberseguridad")
 
-Las preguntas del Trivial han sido elaboradas por OSI de INCIBE: <https://www.osi.es/es/campana/trivial-de-la-ciberseguridad>
+Versión para Alexa del **Trivial de la Ciberseguridad**. Preguntas creadas por la [Oficina de la Seguridad del Internauta (OSI) de INCIBE](https://www.osi.es/es/campana/trivial-de-la-ciberseguridad).
+
+Skill Alexa creada utilizando la plantilla ["Alexa Skills Clean Code Template"](https://github.com/javichur/alexa-skill-clean-code-template).
+
+---
 
 ## ❓ 60 preguntas sobre...
 
@@ -18,6 +21,22 @@ Las preguntas del Trivial han sido elaboradas por OSI de INCIBE: <https://www.os
 - 🌐 Navegación segura.
 
 - 📱 Protección de dispositivos.
+
+Si quieres utilizar las preguntas en otro proyecto, recuerda citar a la fuente original (OSI de INCIBE). Puedes encontrar las preguntas en el [PDF original](./original/osi-trivial-ciberseguridad.pdf) o en formato [JSON en esta skill](./lambda/custom/data/preguntas-trivial.js). 
+
+Si añades nuevas preguntas y quieres comprobar que las preguntas están en formato correcto, ejecuta el comando:
+
+```
+npm run check-preguntas
+```
+
+---
+
+## 📬 Feedback
+
+Si encuentras algún error, si tienes alguna sugerencia de mejora o si este código te sirve para crear tu próxima súper app, por favor [escríbeme](https://github.com/javichur/alexa-skill-trivial-ciberseguridad/issues) 🙂.
+
+---
 
 ## 🐛 Erratas detectadas en el trivial original
 
