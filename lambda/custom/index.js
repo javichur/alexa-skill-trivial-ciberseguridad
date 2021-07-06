@@ -130,7 +130,7 @@ const RespuestaIntentHandler = {
     let speech = '';
     const lastQuestion = SessionState.getCurrentQuestion(handlerInput);
     if (!lastQuestion) {
-      speech = 'Uy qué raro, he olvidado la pregunta.';
+      speech = `Uy qué raro, creo que no te he preguntado nada aún. ${handlerInput.t.DI_JUGAR}`;
       return simpleApl(handlerInput, speech);
     }
 
@@ -177,14 +177,24 @@ const RepeatIntentHandler = {
   },
   handle(handlerInput) {
     let speech = '';
-    const q = SessionState.getCurrentQuestion(handlerInput);
-    if (!q) {
-      speech = 'Uy qué raro, he olvidado la pregunta.'; // caso imposible
-    } else {
-      speech = `Repito la pregunta: ${preguntaToString(q)}`;
+    let lastQuestion = null;
+    const status = SessionState.getCurrentState(handlerInput);
+    switch (status) {
+      case SessionState.STATES.LAUNCH:
+        return simpleApl(handlerInput, `${handlerInput.t.WELCOME_TO}. ${handlerInput.t.HELP}`);
+      case SessionState.STATES.HELP:
+        return simpleApl(handlerInput, handlerInput.t.HELP);
+      case SessionState.STATES.PLAYING:
+        lastQuestion = SessionState.getCurrentQuestion(handlerInput);
+        if (!lastQuestion) {
+          speech = `Uy qué raro, he olvidado la pregunta. ${handlerInput.t.DI_JUGAR}`; // caso imposible
+        } else {
+          speech = `Repito la pregunta: ${preguntaToString(lastQuestion)}`;
+        }
+        return simpleApl(handlerInput, speech);
+      default:
+        return simpleApl(handlerInput, `No tengo nada que repetir. ${handlerInput.t.DI_JUGAR}`); // caso imposible
     }
-
-    return simpleApl(handlerInput, speech);
   },
 };
 

@@ -6,6 +6,8 @@ Versión para Alexa del **Trivial de la Ciberseguridad**. Preguntas creadas por 
 
 Skill Alexa creada utilizando la plantilla ["Alexa Skills Clean Code Template"](https://github.com/javichur/alexa-skill-clean-code-template).
 
+La skill está **publicada**, puedes probarla ahora: [Alexa, abre Trivial Ciberseguridad 🔗](https://alexa-skills.amazon.es/apis/custom/skills/amzn1.ask.skill.1f89cab2-2523-4bf6-a462-c5d74e038145/launch).
+
 ---
 
 ## ❓ 60 preguntas sobre...

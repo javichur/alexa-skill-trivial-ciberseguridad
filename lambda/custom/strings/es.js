@@ -4,6 +4,7 @@ const p = {
   SAMPLES: '"elijo la respuesta A", "la B", "ayuda", "repíteme la pregunta" o "siguiente pregunta"',
   GOODBYE: '¡Hasta luego!',
   FALLBACK: 'No entiendo lo que quieres decir en este contexto. ',
+  DI_JUGAR: 'Si estás listo para jugar, di "jugar". ¿Qué dices?',
 
   // Dynamic entities (slots)
   DYNAMIC_ENTITIES_CLEANED: 'Entidades dinámicas borradas. ',
